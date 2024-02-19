@@ -1,0 +1,91 @@
+/* 기본 - Mobile */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Malgun Gothic", Arial, sans-serif;
+}
+
+/* 애니메이션 */
+#lottie-animation {
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 로그인 컨테이너 */
+.login-container {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 20px;
+    margin-left: none;
+}
+
+.login-container .form-group {
+    margin-bottom: 20px;
+}
+
+.login-container .form-group input {
+    width: 89%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+}
+
+.login-container .form-group input:focus {
+    border-color: #f73d3d;
+}
+
+.login-container .form-group input[type=text]::placeholder,
+.login-container .form-group input[type=password]::placeholder {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.login-container .form-group button {
+    width: 100%;
+    padding: 20px;
+    background-color: #f73d3d;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* pc */
+@media (min-width:760px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #lottie-animation {
+        flex: 1;
+        /* 남은 공간 모두 차지 설정 */
+        padding: 20px;
+        max-width: 50%;
+    }
+
+    .login-container {
+        flex: 1;
+        /* 남은 공간 모두 차지 설정 */
+        padding: 20px;
+        /* max-width: 50%;  */
+        margin-left: -70px;
+    }
+
+    .form-group input {
+        width: 400px;
+    }
+    .login-container .form-group button {
+        width: 400px;
+    }
+
+}
